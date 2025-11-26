@@ -1,4 +1,4 @@
-# L-encyclop-die sur l'univers de The Witcher
+# L'encyclopédie sur l'univers de The Witcher
 
 [![Flask](https://img.shields.io/badge/Flask-2.3+-blue.svg)](https://flask.palletsprojects.com/)
 [![React](https://img.shields.io/badge/React-18+-61DAFB.svg)](https://reactjs.org/)
