@@ -1,3 +1,9 @@
 ## 26/11/2025
 création du digramme base de donnée version 1 pour débuter
 commencement de la structure du backend
+
+# 27/11/2025
+Commencement des insert
+Segmentation des insert avec différents fichier data pour éviter une surchage de dossier
+
+## 28/11/2025
