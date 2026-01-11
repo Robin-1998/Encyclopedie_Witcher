@@ -1,0 +1,11 @@
+flask
+flask-restx
+email-validator
+flask-sqlalchemy
+flask-bcrypt
+flask-jwt-extended
+PyJWT==2.10.0
+psycopg2-binary
+python-dotenv
+geoalchemy2
+flask_cors
