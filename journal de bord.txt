@@ -6,4 +6,14 @@ commencement de la structure du backend
 Commencement des insert
 Segmentation des insert avec différents fichier data pour éviter une surchage de dossier
 
-## 28/11/2025
+## 01/12/2025 
+Finalisation des Insert de base. Il restera à faire pour plus tard les insert pour description + map_region + map_marker.
+
+# du 05 au 11/01/2026
+Création d'une pré-maquette avec apprentissage des bases de figma
+
+# 11/01
+Création image docker pour le backend
+commencement de la structure du back-end
+Ajout des extensions python dans un requierements.txt
+
