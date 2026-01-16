@@ -13,7 +13,7 @@ class CharacterOrganisation(BaseModel):
     __tablename__ = "character_organisations"
 
     character_id = db.Column(db.BigInteger, db.ForeignKey('characters.id', ondelete='CASCADE'), nullable=False)
-    organisation_id = db.Column(db.BigInteger, db.ForeignKey('organisations.id', ondelete='CASCADE') nullable=False)
+    organisation_id = db.Column(db.BigInteger, db.ForeignKey('organisations.id', ondelete='CASCADE'), nullable=False)
     role = db.Column(db.String(50))
 
     # ------------------------
@@ -42,10 +42,10 @@ class CharacterOrganisation(BaseModel):
             'organisation': self.organisation.to_dict() if self.organisation else None,
         }
 
-"""
-pour éviter les boucles infinis
-'character': {
-    'id': self.character.id,
-    'name': self.character.name
-} if self.character else None,
-"""
+    """
+    pour éviter les boucles infinis
+    'character': {
+        'id': self.character.id,
+        'name': self.character.name
+    } if self.character else None,
+    """
