@@ -17,3 +17,14 @@ Création image docker pour le backend
 commencement de la structure du back-end
 Ajout des extensions python dans un requierements.txt
 
+#12/01
+Création du .env et du run.py pour du dévelopement
+
+#13/01
+Rélisation du config.py
+
+# 15/01 et 16/01
+Création des différents models et finalisation des modèles :
+ - basemodel.py
+ - character.py
+ - character_organisation.py
