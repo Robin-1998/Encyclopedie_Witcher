@@ -21,7 +21,7 @@ class Character(BaseModel):
     birth_date = db.Column(db.SmallInteger)
     death_date = db.Column(db.SmallInteger)
     gender = db.Column(db.String(50))
-    description = db.Column(db.Text, nullable=False)
+    short_description = db.Column(db.Text, nullable=False)
     citation = db.Column(db.String(400))
 
     # ------------------------
@@ -74,7 +74,7 @@ class Character(BaseModel):
             "death_place": self.death_place.title if self.death_place else None,
             "profession": self.profession.name if self.profession else None,
             "gender": self.gender,
-            "description": self.description,
+            "short_description": self.short_description,
             "citation": self.citation,
         })
         return data

@@ -17,7 +17,7 @@ class Culture(BaseModel):
 
 
     name = db.Column(db.String(150), nullable=False)
-    description = db.Column(db.Text)
+    short_description = db.Column(db.Text)
 
     characters = db.relationship('Character', back_populates='culture', lazy='select')
 
@@ -39,6 +39,6 @@ class Culture(BaseModel):
         data = super().to_dict() # récupère le dictionnaire du parent
         data.update ({
             "name": self.name,
-            "description": self.description
+            "short_description": self.short_description
         })
         return data
