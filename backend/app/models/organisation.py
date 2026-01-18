@@ -14,7 +14,7 @@ class Organisation(BaseModel):
 
     name = db.Column(db.String(100), nullable=False)
     short_description = db.Column(db.Text)
-    organisation_type_id = db.Column(db.BigInteger, db.ForeignKey('organisations_types.id', ondelete='RESTRICT'))
+    organisation_type_id = db.Column(db.BigInteger, db.ForeignKey('organisation_types.id', ondelete='RESTRICT'))
 
     #Relation ORM
     organisation_type = db.relationship("OrganisationType", back_populates="organisations", passive_deletes=True)
