@@ -7,3 +7,13 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 Ceci est un projet personnel réalisé dans le but de faire découvrir cette univers par le biais d'un site web immersif et de rendre honneur à cette univers tellement fantastique
+
+## Fonctionalités
+
+### 🗺️ Carte interactive
+- Certaine page sur les lieux principaux regroupe des carte interactives qui permet d'avoir une visible plus fluide entre les différentes ville d'une région
+- Affichage des points d'intérêts via des marqueurs
+
+### 📚 Encyclopédie
+- Vitrine des différents personnages, races, profession, culture, lieux.
+- Possibilité d'avoir une description de chaque élément de la vitrine
