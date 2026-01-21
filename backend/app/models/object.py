@@ -17,6 +17,10 @@ class Object(BaseModel):
     name = db.Column(db.String(100), nullable=False)
     short_description = db.Column(db.Text)
 
+    object_type_id = db.Column(db.BigInteger,db.ForeignKey("object_types.id"),nullable=False)
+
+    object_type = db.relationship("ObjectType",back_populates="objects")
+
     def to_dict(self):
         """
         Convertit l'objet Object en dictionnaire sérialisable
@@ -26,7 +30,8 @@ class Object(BaseModel):
         """
         data = super().to_dict()
         data.update ({
-            "name": self.name.id,
-            "short_description": self.short_description.id
+            "name": self.name,
+            "short_description": self.short_description
+            "object_type_id": self.object_type_id
         })
         return data
