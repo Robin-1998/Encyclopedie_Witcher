@@ -35,6 +35,7 @@ class Description(BaseModel):
         data = super().to_dict()
         data.update ({
             "id": self.id,
+            "image_url": self.image_url.id,
             "entity_type": self.entity_type,
             "entity_id": self.entity_id,
             "title": self.title,
