@@ -33,7 +33,6 @@ class Culture(BaseModel):
 
     characters = db.relationship('Character', back_populates='culture', lazy='select')
     culture_type_id = db.Column(db.BigInteger, db.ForeignKey("culture_types.id", ondelete="RESTRICT"), nullable=False)
-    parent_culture_id = db.Column(db.BigInteger, db.ForeignKey("cultures.id", ondelete="RESTRICT"), nullable=True)
 
     culture_type = db.relationship("CultureType", back_populates="cultures")
 
