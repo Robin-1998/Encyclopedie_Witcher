@@ -17,7 +17,7 @@ class Organisation(BaseModel):
     organisation_type_id = db.Column(db.BigInteger, db.ForeignKey('organisation_types.id', ondelete='RESTRICT'))
 
     #Relation ORM
-    organisation_type = db.relationship("OrganisationType", back_populates="organisations", passive_deletes=True)
+    organisation_type = db.relationship('OrganisationType', back_populates="organisations", passive_deletes=True)
 
     def to_dict(self):
         """
