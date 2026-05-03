@@ -19,7 +19,12 @@ class Repository(ABC):
     @abstractmethod
     def add(self, obj):
         """ajoute un objet à la base de donnée"""
-    pass
+        try:
+            db.session.add(obj)
+            db.session.commit()
+        except Exception:
+            db.session.rollback()
+            raise
 
     @abstractmethod
     def get(self, obj_id):
