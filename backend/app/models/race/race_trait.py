@@ -13,7 +13,7 @@ class RaceTrait(BaseModel):
     category = db.Column(db.String(50))
 
     # Relation ORM
-    race = db.relationship("Race", back_populate="race_traits", nullable=False)
+    race = db.relationship("Race", back_populates="race_traits", nullable=False)
 
     def to_dict(self):
         data = super().to_dict()

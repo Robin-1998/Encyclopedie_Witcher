@@ -15,7 +15,7 @@ from backend.app.models.object_type import ObjectType
 from backend.app.models.organisation import Organisation
 from backend.app.models.organisation_type import OrganisationType
 from backend.app.models.place_map.place import Place
-from backend.app.models.place_map.place_relation import PlacesRelation
+from backend.app.models.place_map.place_relation import PlaceRelation
 from backend.app.models.profession import Profession
 from backend.app.models.race import Race
 from backend.app.models.race.race_trait import RaceTrait
@@ -412,8 +412,8 @@ class Facade:
         place_id: int,
         related_place_id: int,
         relation_type_id: int
-    ) -> PlacesRelation:
-        place_relation = PlacesRelation(
+    ) -> PlaceRelation:
+        place_relation = PlaceRelation(
             place_id=place_id,
             related_place_id=related_place_id,
             relation_type_id=relation_type_id
@@ -421,7 +421,7 @@ class Facade:
         self.places_relation_repo.add(place_relation)
         return place_relation
 
-    def get_relations_by_place(self, place_id: int) -> list[PlacesRelation]:
+    def get_relations_by_place(self, place_id: int) -> list[PlaceRelation]:
         return self.places_relation_repo.get_all_for_place(place_id)
 
     def delete_place_relation(self, place_relation_id: int) -> bool:

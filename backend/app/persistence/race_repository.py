@@ -4,9 +4,9 @@ Repositories pour les races et leurs sous-entités.
 - RaceRepository      : les races elles-mêmes
 - RaceTraitRepository : les traits associés à chaque race
 """
-from backend.app.models.race_type import RaceType
+from backend.app.models.race.race_type import RaceType
 from backend.app.models.race import Race
-from backend.app.models.race_trait import RaceTrait
+from backend.app.models.race.race_trait import RaceTrait
 from backend.app.persistence.repository import SQLAlchemyRepository
 
 

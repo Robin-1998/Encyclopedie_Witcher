@@ -4,8 +4,8 @@ Repositories pour les entités géographiques de la carte interactive.
 - MapRegionRepository : zones polygonales (royaumes, régions...)
 Les géométries utilisent GeoAlchemy2 avec SRID=0 (carte custom sans projection).
 """
-from backend.app.models.map_marker import MapMarker
-from backend.app.models.map_region import MapRegion
+from backend.app.models.place_map.map_marker import MapMarker
+from backend.app.models.place_map.map_region import MapRegion
 from backend.app.persistence.repository import SQLAlchemyRepository
 
 

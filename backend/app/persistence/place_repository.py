@@ -2,7 +2,7 @@
 Repository spécifique pour les entités `Place`.
 Ajoute des méthodes de filtrage par type, hiérarchie parent/enfant.
 """
-from backend.app.models.place import Place
+from backend.app.models.place_map.place import Place
 from backend.app.persistence.repository import SQLAlchemyRepository
 
 

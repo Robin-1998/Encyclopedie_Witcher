@@ -31,7 +31,7 @@ class Object(BaseModel):
         data = super().to_dict()
         data.update ({
             "name": self.name,
-            "short_description": self.short_description
+            "short_description": self.short_description,
             "object_type_id": self.object_type_id
         })
         return data

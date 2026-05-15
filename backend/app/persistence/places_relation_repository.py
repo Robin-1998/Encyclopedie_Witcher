@@ -3,8 +3,8 @@ Repositories pour les relations entre lieux.
 - RelationTypeRepository : gère les types de relations (ex: 'borde', 'contient')
 - PlacesRelationRepository : gère les liens entre lieux
 """
-from backend.app.models.relation_type import RelationType
-from backend.app.models.places_relation import PlacesRelation
+from backend.app.models.place_map.relation_type import RelationType
+from backend.app.models.place_map.place_relation import PlacesRelation
 from backend.app.persistence.repository import SQLAlchemyRepository
 
 
@@ -18,7 +18,7 @@ class RelationTypeRepository(SQLAlchemyRepository):
         return self.model.query.filter_by(name=name).first()
 
 
-class PlacesRelationRepository(SQLAlchemyRepository):
+class PlaceRelationRepository(SQLAlchemyRepository):
 
     def __init__(self):
         super().__init__(PlacesRelation)
